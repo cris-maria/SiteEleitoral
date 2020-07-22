@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro Usuario</title>
+    <link rel="stylesheet" href="../css/estilo.css">
+</head>
+
+<body>
+    <main class="cadastrar_usuario">
+        <section class="cadastro">
+            <div class="destaque">
+                <h3>Cadastro de Usuários!</h3>
+            </div>
+            <form action="" method="POST" class="usuario">
+                <div class="nome_sobrenome">
+                    <input type="text" placeholder="First Name" class="nome_usuario">
+                    <input type="text" placeholder="Last Name" class="sobrenome_usuario">
+                </div>
+                <div class="email_usuario">
+                    <input type="email" placeholder="Email Address" class="email">
+                </div>
+                <div class="senha_usuario">
+                    <input type="password" placeholder="Password" class="senha_user">
+                    <input type="password" placeholder="Repeat Password" class="confirme_senha">
+                </div>
+                <div class="cadastro_user">
+                    <button type="submit" onclick="retornarLogin()" id="confirme">Cadastrar Usuario</button>
+                </div>
+            </form>
+        </section>
+    </main>
+    <script src="js/main.js"> </script>
+</body>
+
+</html>

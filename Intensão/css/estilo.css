@@ -1,0 +1,297 @@
+/* configuração geral da pagina*/
+*{
+    font-family:Dancing;
+    font-size: 100%;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* fontes padronizadas*/
+@font-face{
+    font-family:PTSans-Regular;
+    src: url(/fonts/PTSans-Regular.ttf);
+}
+@font-face{
+    font-family: Dancing;
+    src: url(/fonts/Dancing.ttf);
+}
+/* pagina para logar*/
+.contanier{
+    display: flex;
+    justify-content:space-around;
+    margin: 0.2em auto 0 auto;
+}
+.logar, .sobre{
+    width:68%;
+    height: 99vh;
+    box-shadow: 2px 5px 12px 1px #888888;
+    background: #fff;
+    border-radius: 5px;
+} 
+.logar{
+    width:30%;
+}
+.logar p{
+    text-align: center;
+    font-size: 2.3em;
+    font-style: italic;
+    color: #606060;
+    margin-top: 2%;
+}
+.sobre{
+    background:#4e72dfef;
+    font-family: Dancing;
+}  
+.sobre h2{
+    text-align: center;
+    color: #eee;
+    font-size:2em;
+    font-style: italic;
+}
+.formulario{
+    top:3em;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+}
+.form input{
+    overflow: visible;
+    background-color: #fff;
+    background-clip: padding-box;
+    color: #606060;
+}
+
+.nome, .senha{
+    width: 80%;
+    margin: 2em auto 0 auto;
+    padding: 10px;
+    border: 1px solid #eee;
+    border-radius: 5px;
+    
+}
+.botoes_logar{
+    display: flex;
+    width: 80%;
+    justify-content: space-around;
+    margin-top: 5%;
+}
+#cadastrar, #entrar, #confirme{
+    width: 48%;
+    padding: 8px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 1px solid #eee;
+    background-color: #4e72dfef;
+    font-family: Dancing;
+    color:#fafafa !important;
+}
+#cadastrar, #confirme{
+    background-color:#3b5998;
+}
+/* logar finlizada*/
+/* Cadastrar usuario*/
+.cadastrar_usuario, .cadastrar_eleitor{
+    background-color: #eeeeee;
+    width: 100%;
+    height:100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.cadastro{
+    width: 60%;
+    height: 80vh;
+    box-shadow: 2px 5px 12px 1px #888888;
+    background-color: #fafafa !important;
+    border-radius: 8px;
+}
+.destaque{
+    display: flex;
+    justify-content: space-around;
+}
+.destaque h3{
+    margin-top:4%;
+    color: #606060;
+    font-size: 2.3em;
+    font-style: italic;
+}
+.nome_sobrenome,.email_usuario, .senha_usuario,.cadastro_user,.id_cidade,.nome_apelido, .data_secao, .endereco_eleitor, .telefone_situacao, .cadastra_eleitor{
+    display: flex;
+    justify-content: space-around;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 5%;
+}
+.nome_usuario, .sobrenome_usuario, .email, .senha_user, .confirme_senha, .cidade, .id,.nome_eleitor, .apelido_eleitor, .data,.sess,.endereco, .telefone, .situacao{
+    width: 40%;
+    padding: 10px;
+    border: 1px solid #eee;
+    background-color: #fafafa !important;
+    border-radius: 8px;
+    color: #606060;
+}
+.email, #confirme, .endereco{
+    width: 90%;
+}
+#confirme, #cancelar, #adicionar{
+    border-radius: 12px;
+    padding: 10px;
+}
+#cancelar, #adicionar{
+    width: 30%;
+    cursor: pointer;
+    border: transparent;
+    color: #fafafa;
+    background-color: #3b5998;
+}
+#adicionar{
+    background-color: #4e72dfef;
+}
+/* Cadastrar usuario finalizado*/
+
+/* Pagina Principal*/
+.principal{
+    display:flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 100vh;
+    background-color: #eee;
+}
+.menu, .informacoes_gerais{
+    width: 20%;
+    height: 100vh;
+    background-color:#4e72dfef;
+    box-shadow: 2px 5px 12px 1px #888888;
+}
+.informacoes_gerais{
+    width:80%;
+    background-color: #fff;
+}
+/* menu */
+.menu, .contanier_menu{
+    display: flex;
+    justify-content: space-around;
+}
+.menu_lateral ul li{
+    list-style: none;
+    padding: 20px 50px;
+    margin-top: 1em;
+}
+.menu_lateral ul li a{
+    text-decoration: none;
+    color: #fafafa !important;
+}
+
+.menu_lateral ul li a:hover{
+    color: #3b5998;
+}
+.cadastrar-btn   {
+    color: #fafafa !important;
+    border: none;
+    cursor: pointer;
+    background: none;
+}
+
+.dropdown-cadastro {
+    position: relative;
+    display: inline-block;
+}
+
+.cadastrar-content {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+}
+
+.cadastrar-content a {
+    color: #fafafa !important;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.cadastrar-content a:hover{
+    color:  #3b5998;
+}
+.dropdown-cadastro:hover .cadastrar-content {
+    display: block;
+}
+
+.dropdown-cadastro:hover {
+    background: none;
+}
+/* menu finalizado*/
+
+/* barra de pesquisa*/
+.informacoes_gerais{
+    background-color: #eee;
+    display: flex;
+    flex-direction: column;
+}
+.pesquisar_logout{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 70px;
+    background-color:#f8f9fc!important;
+}
+.pesquisar, .logout{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 90%;
+    width: 45%;
+    margin-top: 0.4%;
+    border-radius: 8px;
+}
+.logout{
+    width: 30%;
+    display: flex;
+    justify-content: flex-end;
+}
+.pesquisar input{
+    padding: 10px;
+    width: 80%;
+    border-radius: 8px;
+    background-color: #eee;
+    border:0!important;
+}
+.logout button{
+    padding: 8px;
+    color: #3b5998;
+    background-color: transparent;
+    cursor: pointer;
+    border: transparent;
+}
+.info_group,.destaque_geral{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1%;
+}
+.item1,.item2,.item3, .item4{
+    width: 20%;
+    height: 70%;
+    margin: auto;
+    box-shadow: 2px 5px 12px 1px #888888;
+    border-radius: 8px;
+    background-color: #f8f9fc!important;
+    border-left:.25rem solid #3b5998;
+}
+.destaque_geral{
+    height: 500px;
+    
+}
+.table, .mais_informacoes{
+    height:80%;
+    width: 40%;
+    background-color:#f8f9fc!important;
+    margin: auto;
+    box-shadow: 2px 5px 12px 1px #888888;
+}
+.rodape{
+   border: 1px solid #000000;
+   height: 30vh;
+   width: 100%;
+}

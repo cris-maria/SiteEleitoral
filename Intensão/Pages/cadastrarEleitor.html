@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastrar Eleitor</title>
+    <link rel="stylesheet" href="../css/estilo.css">
+</head>
+
+<body>
+    <main class="cadastrar_eleitor">
+        <section class="cadastro">
+            <form action="" method="POST">
+                <div class="id_cidade">
+                    <input type="number" placeholder="Id Eleitor" class="id">
+                    <select class="cidade">
+                        <option value="">Cidade</option>
+                        <option value="">Cidade 01</option>
+                        <option value="">Cidade 02</option>
+                        <option value="">Cidade 03</option>
+                    </select>
+                </div>
+                <div class="nome_apelido">
+                    <input type="text" class="nome_eleitor" placeholder="Nome">
+                    <input type="text" class="apelido_eleitor" placeholder="Apelido">
+                </div>
+                <div class="data_secao">
+                    <input type="date" class="data">
+                    <input type="number" placeholder="Seção" class="sess">
+
+                </div>
+                <div class="endereco_eleitor">
+                    <input type="text" placeholder="Endereçõ" class="endereco">
+                </div>
+
+                <div class="telefone_situacao">
+                    <input type="tel" placeholder="Telefone" class="telefone">
+                    <select class="situacao">
+                        <option value="">Situação</option>
+                        <option value="">Ativo</option>
+                        <option value="">Inativo</option>
+                    </select>
+                </div>
+                <div class="cadastra_eleitor">
+                    <button type="submit" id="cancelar">Cancelar</button>
+                    <button type="submit" id="adicionar">Adicionar</button>
+                </div>
+            </form>
+        </section>
+
+    </main>
+</body>
+
+</html>
